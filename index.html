@@ -36,7 +36,25 @@
 		})
 		.attr("height", function(d,i){
 			return y(1)-1;
+		});
+		svg.selectAll(".bar-label")
+		.data(data)
+		.enter()
+		.append("text")
+		.classed("bar-label", true)
+		.attr("x", function(d,i){
+			return x(d);
 		})
+		.attr("dx", -4)
+		.attr("y", function(d,i){
+			return y(i);
+		})
+		.attr("dy", function(d,i){
+			return y(1)/1.5+2;
+		})
+		.text(function(d,i){
+			return d;
+		});
 	</script>	
 </body>
 </html>
