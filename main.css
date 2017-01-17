@@ -15,6 +15,6 @@ body,html{
 }
 .bar-label{
 	fill: white;
-	text-anchor:end;
-	font-size: 24px;
+	text-anchor: end;
+	font-size: 18px;
 }
